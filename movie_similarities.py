@@ -5,10 +5,10 @@ from openai import OpenAI
 #from openai.embeddings_utils import get_embedding, cosine_similarity
 import numpy as np
 
-_ = load_dotenv('api_keys.env')
+_ = load_dotenv('open_ai_api_keys.env')
 client = OpenAI(
     # This is the default and can be omitted
-    api_key=os.environ.get('openai_api_key'),
+    api_key=os.environ.get('api_key_1_1'),
 )
 
 with open('movie_descriptions.json', 'r') as file:
